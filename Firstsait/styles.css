@@ -1,0 +1,420 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Arial;
+}
+#layout {
+	z-index:1;
+	margin: 0 auto;
+    width: 1280px;
+    height: 100%;
+	
+	
+}
+
+header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	margin-right: 30px;
+	color: black;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #fb5a82;
+	text-decoration: underline;
+} 
+
+
+.block {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#phone-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#phone-container a {
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+	margin-right: 30px;
+	font-weight: bold;
+}
+#phone-container button {
+	border: 1px solid #fb5a82;
+	color: #fb5a82;
+	font-size: 18px;
+	padding: 10px 40px;
+	outline: none;
+	cursor: pointer;
+}
+
+#popup-container {
+	z-index:5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: #00000054;
+}
+#popup {
+	background-color: white;
+	width: 250px;
+	
+}
+
+.about-me {
+	
+  position: relative;
+}
+.about-me__foto {
+  
+  height: 415px;
+  /*width: 100%;*/
+  right: 0;
+  position: absolute;
+	background-image: url('ia.jpg');
+	background-repeat: no-repeat;
+	background-position: right 0;
+	background-size: contain;
+	background-position: top 10px left 80.5%;
+  
+  background-clip: border-box;
+  margin-bottom: 30px;
+  
+}
+
+
+
+.middle {
+	
+	
+	//height: 600px;
+	//background-image: url('ia.jpg');
+	//background-repeat: no-repeat;
+	//background-position: right;
+	//background-size: contain;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 2em;
+	margin: 0 auto;
+	
+}
+.middle p {
+	
+    color: #9191aa;
+    font-size: 23.5px;
+    margin: 0;
+	
+}
+.middle h1 {
+    margin: 5px;
+}
+.middle button {
+    color: white;
+    cursor: pointer;
+    background-color: #fc4f2f;
+    font-size: 13px;
+    padding: 15px 50px;
+    margin-top: 50px;
+    border: none;
+	outline: none;	
+}
+
+.skills{
+    margin-top: 50px;
+}
+.skills h1, .works h1 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+    
+.skills-wrap {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+   
+  }
+  
+  
+  
+.skills-wrap p {
+    color: #9191aa;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.skills button, .works button,  #popup button{
+    color: white;
+    cursor: pointer;
+    background-color: #fc4f2f;
+    font-size: 13px;
+    padding: 15px 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 60px auto;
+}
+
+
+.works {
+    background-color: #f7f7f7;
+    padding: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	align-items: center;
+}
+.works-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.works-wrap a {
+    color: #9191aa;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.price {
+	
+    color: white;
+    background-color: #fc4f2f;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 50px;
+}
+
+.Form_name{
+	display:block;
+}
+.For_name{
+	
+}
+
+
+@media(max-width: 720px){
+
+}
+@media (max-width: 830px){
+	#phone-container button {
+	
+	
+	font-size: 14px;
+	padding: 5px 20px;
+}
+	#phone-container a {
+	
+	font-size: 20px;
+	
+	margin-right: 20px;
+	
+}
+}
+@media (max-width: 720px) {
+		#phone-container button {
+	
+	
+	font-size: 12px;
+	padding: 4px 17px;
+}
+	#phone-container a {
+	
+	font-size: 18px;
+	
+	margin-right: 15px;
+	
+}
+
+}
+
+
+@media (min-width: 1024px) {
+  .about-me {
+    margin-bottom: 80px;
+	height: 690px;
+  }
+  
+  .about-me__foto {
+	  
+    width: 53.42%;
+    height: 694px;
+	background-size: contain;
+    background-image: url("ia.jpg");
+    background-position: bottom 57px left 67%;
+    //background-size: auto, 919px auto;
+  }
+}
+@media (max-width: 900px){
+
+.middle p {
+	
+    
+    font-size: 14.5px;
+    margin: 0;
+	
+}
+.middle h1 {
+    font-size: 29.5px;
+}
+
+.middle button {
+    
+    
+    
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-top: 30px;
+   	
+}
+.skills-wrap {
+display: grid;
+    grid-template-columns: 250px 250px;
+}
+
+}
+@media (max-width: 600px){
+
+.middle p {
+	
+    
+    font-size: 23.5px;
+    margin: 0;
+	
+}
+.middle h1 {
+    font-size: 40.5px;
+	padding-top: 0;
+	
+}
+
+.middle button {
+    
+    
+    
+    font-size: 13px;
+    padding: 15px 80px;
+    margin-top: 15px;
+   	
+}
+
+
+{
+	padding-top: 30px;
+}
+
+}
+@media (max-width: 600px){
+	.about-me__foto {
+	   margin-bottom: 0px;
+    position:relative;
+	height: 650px;
+	
+  }
+
+}
+@media (max-width: 450px){
+	
+	.skills-wrap {
+display: grid;
+    grid-template-columns:250px;
+}
+.about-me__foto {
+	height: 415px;
+}
+}
+
+@media (max-width: 300px){
+.about-me__foto {
+	height: 300px;
+}
+}
+
+
+@media(max-width: 600px){
+.middle h1 
+{
+	padding-top:15px;
+}
+}
+
+@media (min-width: 600px) {
+  .about-me {
+	 
+    margin-bottom: 43px;
+	height: 330px;
+  }
+  
+   .about-me__foto {
+	  
+    width: 53.42%;
+    height: 330px;
+	background-size: contain;
+    background-image: url("ia.jpg");
+    background-position: top 10px left 67%;
+    //background-size: auto, 919px auto;
+	
+  }
+  .middle h1 
+{
+	padding-top:150px;
+}
+  
+}
+
+@media (max-width: 1300px) 
+{
+	#layout {
+	margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+}
+@media (max-width: 1100px) 
+{
+#layout {
+	margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+}
+@media (max-width: 900px) 
+{
+#layout {
+	margin: 0 auto;
+    width: 600px;
+    height: 100%;
+}
+}
+
+
+
+
+
+
