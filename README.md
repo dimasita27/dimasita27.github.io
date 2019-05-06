@@ -3,4 +3,4 @@
 
 
 
-[Мой первый сайт](https://dimasita27.github.io/Firstsait/ "Как то так")
+[Мой первый сайт](https://dimasita27.github.io/Firstsite/ "Как то так")
