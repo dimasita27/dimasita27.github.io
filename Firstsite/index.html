@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Дмитрий Ситкевич - официальный сайт</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script>
+		$(function(){
+			$('#callback').click(function(){
+				$('#popup-container').css('display', 'flex');
+			});
+			//fjdlksjfls
+			$('#popup-container').click(function(e){
+				if(e.target === this) {
+					$('#popup-container').css('display', 'none');
+				}
+			});
+		});
+		</script>
+	</head>
+	<body>
+	
+
+	<div class="TopSite">
+	<nav>
+	
+	<a href="#"><img src="arrow.png" height: 100px></a>
+	<!--<img src="arrow.png">-->
+	</nav>
+	
+	</div>
+		<div id="popup-container">
+			<div id="popup">
+				<label class="Form_name"> Ваше имя: </label>
+				<input class="For_name" placeholder="Дмитрий"> </input>
+				<label class="Form_name"> Номер телефона: </label>
+				<input class="For_name" placeholder="+7 (xxx) xxx-xx-xx"> </input>
+				<button class="request"> Отправить контакты</button>
+			</div>
+		</div>
+		
+		<header class="block">
+				<nav>
+					<a href="#skills-wrap">Услуги</a>
+					<a href="#works-wrap">Портфолио</a>
+					<a href="#price">Стоимость</a>
+				</nav>
+				<div id="phone-container">
+					<a href="tel:+79831418892">+7 983 141-88-92</a>
+					<button id="callback">Заказать звонок</button>
+				</div>
+			</header>
+			<main>
+		<div id="layout">
+			<section class="about-me"> 
+			<div class= "about-me__foto"></div>
+			<div class="middle" >
+				<h1 id="names"> Дмитрий Ситкевич </h1>
+				<p id="profession" >Frontend-разработчик и веб-верстальщик </p>
+				<button id="information">Узнать больше</button>
+			</div>
+			
+			</section>
+			
+			 <div class="skills" id="sk">
+          <h1>Что я делаю</h1>
+          <div class="skills-wrap">
+              <div>
+                  <img src="img/icons/tools-and-utensils.png">
+                  <p>Пытаюсь разбираться с вёрсткой страниц и сайтов любой сложности</p>
+              </div>
+              <div>
+                  <img src="img/icons/responsive.png">
+                  <p>Пытаюсь делать адаптивную вёрстка под все браузеры и устройства</p>
+              </div>
+              <div>
+                  <img src="img/icons/programming.png">
+                  <p>Изучаю frontend-разработку и программирование</p>
+              </div>
+               <div>
+                  <img src="img/icons/coding%20(1).png">
+                  <p>Исправление и доработка следующей вёрстки</p>
+              </div>
+              
+          </div>
+          <button>Узнать стоимость</button>
+      </div>
+			
+			
+			 <div class="works" id="wor">
+         <h1>Примеры моих работ</h1>
+         <div class="works-wrap">
+            <!-- <a href="#"><img src="img/Portfolio_1.png"><br/><br/>Сайт психолога Веры Антоновой</a> -->
+             <a href="#"><img src="img/Portfolio_2.png"><br/><br/>Пока что, просто фотографии</a>
+             <a href="#"><img src="img/Portfolio_3.png"><br/><br/>Но надюсь скоро будут реальные проекты"</a>
+    
+         </div>
+         <button>Заказать проект</button>
+          
+      </div>
+      
+    <section class="price">
+        <h2>Адаптивная вёрстка под все устройства и браузеры от **** рублей всего за **** .*</h2>
+        <p>*Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально в зависимости от сложности задач.</p>
+    </section>
+    
+			
+		</div>
+		</main>
+		
+	</body>
+</html>
